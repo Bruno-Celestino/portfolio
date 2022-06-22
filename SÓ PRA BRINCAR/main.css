@@ -1,0 +1,190 @@
+:root {
+    --black: black;
+    --grey: #b8b8b8;
+    --white: white;
+    --blue: #00bfff;
+    --orange: orange;
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --color: var(--white);
+    --imbg: var(--orange);
+    --cpbg: var(--grey);
+    --textShadow: var(--black);
+}
+
+.ligth-theme {
+    --bg: var(--grey);
+    --color: var(--black);
+    --imbg: var(--blue);
+    --cpbg: var(--white);
+    --textShadow: var(--white);
+}
+
+.absoluto {
+    --ftposition: absolute;
+}
+
+.relativo {
+    --ftposition: relative;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--color);    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-image: linear-gradient(var(--imbg), var(--bg));
+}
+
+.entrar {
+    position: absolute;
+    left: 635px;
+}
+
+footer {
+    background-color: var(--imbg);
+    flex-direction: column;
+    display: block;
+    position: var(--ftposition);
+    bottom: 0;
+    width: 100%;
+}
+
+.tema {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: fit-content;
+    width: 80px;
+    z-index: 2;
+}
+
+button {
+    background-color: var(--bg);
+    color: var(--color);      
+}
+
+#direitosRodape {
+    margin: 0;
+    padding: 5px;
+    color: var(--color);
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: var(--imbg);
+    text-shadow: 1px 1px var(--textShadow);
+}
+
+.navbar a {
+    float: left;
+    color: var(--color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: var(--color);
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+    text-shadow: 1px 1px var(--textShadow);
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: var(--bg);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--cpbg);
+    width: 100%;
+    left: 0;
+    text-shadow: none;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content .menuheader {
+    background: var(--bg);
+    padding: 16px;
+    color: var(--color);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.column {
+    float: left;
+    width: 33,3%;
+    padding: 10px;
+    height: fit-content;
+}
+
+.column a:hover {
+    border-radius: 50px;
+    background-image: radial-gradient(var(--imbg), var(--cpbg));
+}
+
+.column a{
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#voltarTopo {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--color);
+    text-shadow: 1px 1px var(--textShadow);
+}
+canvas {
+    border: 5px double var(--color);
+}
+
+hr {
+    margin: 0;
+}
+
+#setinhabaixo {
+    display: none;
+}
+
+.dropdown:hover #setinhacima{
+    display: none;
+}
+
+.dropdown:hover #setinhabaixo{
+    display: inline;
+}

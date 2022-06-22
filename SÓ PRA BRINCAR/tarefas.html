@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TAREFAS</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    </head>
+
+    <body id="body" class="dark-theme" onload="ajusteRodape(), nada()">
+        <header> 
+            <a name="topo"></a>
+                <button class="tema" onclick="temas()"><span id="tema"></span></button>
+            <div class="navbar">
+                <a href="./tarefas.html">Tarefas</a>
+                <a href="./contatos.html">Contatos</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Projetos <i id="setinhabaixo" class="fa fa-caret-down"></i><i id="setinhacima" class="fa fa-caret-up"></i></button>
+                    <div class="dropdown-content">
+                        <div class="menuheader">Disponíveis no momento
+                        </div>
+                            <div class="row">
+                                <div class="column">
+                                <a href="./drawBox.html">drawBox()</a>
+                                </div>
+                            </div>    
+                    </div>
+                </div>
+            </div>
+                <hr>
+
+        </header>
+
+        <main>
+            <h1>Tarefas</h1>
+            <ul align='left'>
+                <h3>TAREFAS A SEREM FEITAS NO MOMENTO:</h3>
+                <li>Criar perfis para login(e um especifico para mim, o admin);</li>
+                <li>Projeto Aba da comunidade</li>
+                    <ul>
+                        <p>Etapas restantes: </p>
+                        <li>Criar um link que leve a página do projeto;</li>
+                        <li>Criar uma rota especifica e personaliza-la;</li>
+                        <li>Criar a página do projeto aba da comunidade;</li>
+                        <li>Criar um banco de dados;</li>
+                    </ul><br>
+                <li>Conectar um banco de dados ao javascript;</li>
+                <li>Adicionar o meu site à um servidor local;</li>
+                <li>Personalizar todas as páginas</li>
+                <ul>
+                    <p>Páginas restantes:</p>
+                    <li>Menu;</li>
+                    <li>Tarefas;</li>
+                    <li>drawBox().</li>
+                </ul><br>
+                <li>Fazer com que ao clicar no link MENU/TAREFAS/CONTATOS a troca de temas seja válida para as três ao mesmo tempo.</li>
+                <p><span id="nenhum"></span></p>
+            </ul>
+
+            <script src="app.js"></script>
+        </main>
+
+        <footer id="ft" class="absoluto">
+            <hr>
+            <a href="#topo" id="voltarTopo">Voltar para o topo</a><br>
+
+            <p id="direitosRodape"><b>Todos os Direitos Reservados</b></p>        
+        </footer>
+    </body>
+</html>

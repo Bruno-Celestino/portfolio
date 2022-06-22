@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FUNÇÃO DRAWBOX()</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    </head>
+
+    <body id="body" class="dark-theme" onload="ajusteRodape()">
+        <header> 
+            <a name="topo"></a>
+                <button class="tema" onclick="temas()"><span id="tema"></span></button>
+            <div class="navbar">
+                <a href="./tarefas.html">Tarefas</a>
+                <a href="./contatos.html">Contatos</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Projetos <i id="setinhabaixo" class="fa fa-caret-down"></i><i id="setinhacima" class="fa fa-caret-up"></i></button>
+                    <div class="dropdown-content">
+                        <div class="menuheader">Disponíveis no momento
+                        </div>
+                            <div class="row">
+                                <div class="column">
+                                <a href="./drawBox.html">drawBox()</a>
+                                </div>
+                            </div>    
+                    </div>
+                </div>
+            </div>
+                <hr>
+
+        </header>
+
+        <main>
+            <h1>DrawBox()</h1>
+            <canvas id="canvas" width="500" height="500"></canvas>
+        </main>
+
+        <footer id="ft" class="absoluto">
+            <hr>
+            <a href="#topo" id="voltarTopo">Voltar para o topo</a><br>
+
+            <p id="direitosRodape"><b>Todos os Direitos Reservados</b></p>        
+        </footer>
+        <script src="drawBox.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
